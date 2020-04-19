@@ -1,0 +1,5 @@
+#!/usr/bin/sudo bash
+
+SPEED=${1?Error: no speed given}
+sudo echo $SPEED > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon[[:print:]]*/pwm1
+sensors
